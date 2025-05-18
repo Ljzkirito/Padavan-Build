@@ -136,7 +136,7 @@ jobs:
             mv -fv ${{ inputs.target }}.config ${{ env.TRUNK_DIR }}/configs/templates/${{ inputs.target }}.config
           fi
           cd ${{ env.TRUNK_DIR }}
-          cp -f configs/templates/${{ inputs.target }}.config /.config
+          cp -f configs/templates/${{ inputs.target }}.config .config
 
       - name: Start build firmware
         run: |
